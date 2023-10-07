@@ -1,0 +1,25 @@
+name: "zvos-edge-command-control"
+mode: "dev"
+port: 8089
+https_port: 8446
+https: false
+version: "v0.1.0"
+upload_status_url: "http://140.210.205.9:30717"
+
+log:
+  level: "debug"
+  filename: "app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  user_name: "root"
+  password: "zhjc2022mysql"
+  host: "10.71.6.157"
+  port: 30451
+  charset: "utf8"
+  max_open_conns: 4
+  max_idle_conns: 2
+
+resync: 60

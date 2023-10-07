@@ -1,0 +1,15 @@
+name: "zvos-edge-command-control"
+mode: "dev"
+port: 8089
+https_port: 8446
+https: false
+version: "v0.1.0"
+
+log:
+  level: "debug"
+  filename: "app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+resync: 60
